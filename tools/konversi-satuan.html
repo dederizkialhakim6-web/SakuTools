@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <!-- SEO DASAR -->
+    <title>Konversi Satuan Online Gratis - SakuTools</title>
+
+    <meta
+        name="description"
+        content="Konversi satuan panjang, berat, suhu, dan volume secara online gratis dengan SakuTools. Ubah kilometer, meter, kilogram, gram, Celsius, Fahrenheit, liter, dan satuan lainnya dengan mudah."
+    >
+
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#f5f7fb">
+
+    <!-- OPEN GRAPH -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="id_ID">
+    <meta property="og:site_name" content="SakuTools">
+    <meta
+        property="og:title"
+        content="Konversi Satuan Online Gratis - SakuTools"
+    >
+    <meta
+        property="og:description"
+        content="Ubah satuan panjang, berat, suhu, dan volume dengan cepat dan gratis menggunakan alat konversi satuan SakuTools."
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/tool.css">
+
+    <!-- JAVASCRIPT -->
+    <script src="../assets/js/main.js" defer></script>
+    <script src="../assets/js/tools.js" defer></script>
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="../index.html" class="logo">
+            <span class="logo-icon">S</span>
+            SakuTools
+        </a>
+
+        <nav>
+            <a href="../index.html">Beranda</a>
+            <a href="../index.html#alat">Semua Alat</a>
+            <a href="../tentang.html">Tentang</a>
+        </nav>
+
+        <button id="themeToggle" class="theme-toggle"
+            aria-label="Ganti tema">🌙</button>
+    </header>
+
+    <main class="tool-page">
+
+        <div class="breadcrumb">
+            <a href="../index.html">Beranda</a>
+            <span>/</span>
+            <span>Konversi Satuan</span>
+        </div>
+
+        <section class="tool-intro">
+            <span class="hero-label">ALAT PERHITUNGAN</span>
+            <h1>Konversi Satuan Online Gratis</h1>
+            <p>
+                Ubah satuan panjang, berat, suhu, dan volume
+                dengan cepat dan gratis.
+            </p>
+        </section>
+
+        <section class="calculator-card">
+
+            <div class="form-group">
+                <label for="kategoriSatuan">Pilih Kategori</label>
+                <select id="kategoriSatuan">
+                    <option value="panjang">Panjang</option>
+                    <option value="berat">Berat</option>
+                    <option value="suhu">Suhu</option>
+                    <option value="volume">Volume</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="nilaiSatuan">Nilai yang Dikonversi</label>
+                <input
+                    type="number"
+                    id="nilaiSatuan"
+                    placeholder="Contoh: 100"
+                    step="any"
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="satuanAwal">Dari Satuan</label>
+                <select id="satuanAwal"></select>
+            </div>
+
+            <div class="form-group">
+                <label for="satuanTujuan">Ke Satuan</label>
+                <select id="satuanTujuan"></select>
+            </div>
+
+            <button class="calculate-button" id="tombolKonversi">
+                Konversi Sekarang
+            </button>
+
+            <button class="reset-button" id="resetKonversi">
+                Reset
+            </button>
+
+            <p id="pesanKonversi" class="message" aria-live="polite"></p>
+
+            <div class="result-box" id="hasilKonversi" hidden>
+                <span class="result-label">Hasil Konversi</span>
+                <h2 id="nilaiHasil">0</h2>
+                <div class="result-detail">
+                    <span>Konversi</span>
+                    <strong id="detailKonversi">-</strong>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="tool-description">
+            <h2>Kategori Konversi</h2>
+            <ol>
+                <li>Panjang: kilometer, meter, centimeter, milimeter.</li>
+                <li>Berat: kilogram, gram, miligram.</li>
+                <li>Suhu: Celsius, Fahrenheit, Kelvin.</li>
+                <li>Volume: liter dan mililiter.</li>
+            </ol>
+        </section>
+
+    </main>
+
+ <footer>
+    <div class="footer-logo">SakuTools</div>
+
+    <p>Semua alat digital dalam satu tempat.</p>
+
+    <p>
+        <a href="../privacy.html">Kebijakan Privasi</a>
+    </p>
+
+    <p>© 2026 SakuTools. Dibuat untuk semua orang.</p>
+</footer>
+</body>
+</html>

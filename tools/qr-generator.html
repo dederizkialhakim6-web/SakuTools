@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <!-- SEO DASAR -->
+    <title>QR Code Generator Online Gratis - SakuTools</title>
+
+    <meta
+        name="description"
+        content="Buat QR Code online gratis dari teks atau alamat website dengan QR Code Generator SakuTools. Mudah digunakan dan hasilnya bisa diunduh dalam format PNG."
+    >
+
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#f5f7fb">
+
+    <!-- OPEN GRAPH -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="id_ID">
+    <meta property="og:site_name" content="SakuTools">
+    <meta
+        property="og:title"
+        content="QR Code Generator Online Gratis - SakuTools"
+    >
+    <meta
+        property="og:description"
+        content="Buat QR Code dari teks atau alamat website secara gratis dan unduh hasilnya dengan mudah."
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/tool.css">
+
+    <!-- JAVASCRIPT -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="../assets/js/main.js" defer></script>
+    <script src="../assets/js/tools.js" defer></script>
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="../index.html" class="logo">
+            <span class="logo-icon">S</span>
+            SakuTools
+        </a>
+
+        <nav>
+            <a href="../index.html">Beranda</a>
+            <a href="../index.html#alat">Semua Alat</a>
+            <a href="../tentang.html">Tentang</a>
+        </nav>
+
+        <button id="themeToggle" class="theme-toggle"
+            aria-label="Ganti tema">🌙</button>
+    </header>
+
+    <main class="tool-page">
+
+        <div class="breadcrumb">
+            <a href="../index.html">Beranda</a>
+            <span>/</span>
+            <span>QR Code Generator</span>
+        </div>
+
+        <section class="tool-intro">
+            <span class="hero-label">ALAT DIGITAL</span>
+            <h1>QR Code Generator Online Gratis</h1>
+            <p>
+                Buat QR Code dari teks atau alamat website
+                dengan mudah dan gratis.
+            </p>
+        </section>
+
+        <section class="calculator-card">
+
+            <div class="form-group">
+                <label for="isiQR">Masukkan Teks atau URL</label>
+                <textarea
+                    id="isiQR"
+                    rows="4"
+                    maxlength="1000"
+                    placeholder="Contoh: https://google.com"
+                ></textarea>
+            </div>
+
+            <button class="calculate-button" id="buatQR">
+                Buat QR Code
+            </button>
+
+            <button class="reset-button" id="resetQR">
+                Reset
+            </button>
+
+            <p id="pesanQR" class="message" aria-live="polite"></p>
+
+            <div class="result-box" id="hasilQR" hidden>
+                <span class="result-label">QR Code Kamu</span>
+
+                <div id="qrOutput"
+                    style="display:flex; justify-content:center; padding:20px;">
+                </div>
+
+                <button class="calculate-button" id="downloadQR">
+                    Download QR Code
+                </button>
+            </div>
+
+        </section>
+
+        <section class="tool-description">
+            <h2>Bagaimana cara menggunakan?</h2>
+            <ol>
+                <li>Masukkan teks atau alamat website.</li>
+                <li>Tekan tombol Buat QR Code.</li>
+                <li>Tunggu sampai QR Code muncul.</li>
+                <li>Tekan Download QR Code untuk menyimpan gambar.</li>
+            </ol>
+        </section>
+
+    </main>
+
+<footer>
+    <div class="footer-logo">SakuTools</div>
+
+    <p>Semua alat digital dalam satu tempat.</p>
+
+    <p>
+        <a href="../privacy.html">Kebijakan Privasi</a>
+    </p>
+
+    <p>© 2026 SakuTools. Dibuat untuk semua orang.</p>
+</footer>
+
+</body>
+</html>

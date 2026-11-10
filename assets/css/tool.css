@@ -1,0 +1,223 @@
+.tool-page {
+  max-width: 850px;
+  margin: auto;
+  padding: 40px 20px 80px;
+}
+
+.breadcrumb {
+  display: flex;
+  gap: 10px;
+  font-size: 13px;
+  color: var(--muted);
+  margin-bottom: 45px;
+}
+
+.breadcrumb a {
+  color: var(--primary);
+}
+
+.tool-intro {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.tool-intro h1 {
+  font-size: 36px;
+  margin: 12px 0;
+}
+
+.tool-intro p {
+  color: var(--muted);
+}
+
+.calculator-card {
+  max-width: 550px;
+  margin: auto;
+  padding: 30px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+}
+
+.form-group {
+  margin-bottom: 22px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 9px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  outline: none;
+  font-size: 15px;
+  background: var(--background);
+  color: var(--text);
+}
+
+.form-group input:focus {
+  border-color: var(--primary);
+}
+
+.calculate-button,
+.reset-button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.calculate-button {
+  background: var(--primary);
+  color: white;
+}
+
+.calculate-button:hover {
+  opacity: 0.9;
+}
+
+.reset-button {
+  margin-top: 10px;
+  background: var(--background);
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+
+.message {
+  color: #dc2626;
+  font-size: 13px;
+  margin-top: 15px;
+}
+
+.result-box {
+  margin-top: 25px;
+  padding: 22px;
+  border-radius: 13px;
+  background: var(--background);
+  border: 1px solid var(--border);
+}
+
+.result-label {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.result-box h2 {
+  font-size: 30px;
+  color: #16a34a;
+  margin: 8px 0 20px;
+  overflow-wrap: anywhere;
+}
+
+.result-detail {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 0;
+  border-top: 1px solid var(--border);
+  font-size: 13px;
+}
+
+.result-detail span {
+  color: var(--muted);
+}
+
+.result-detail strong {
+  text-align: right;
+}
+
+.tool-description {
+  max-width: 550px;
+  margin: 50px auto 0;
+}
+
+.tool-description h2 {
+  font-size: 21px;
+  margin-bottom: 15px;
+}
+
+.tool-description ol {
+  padding-left: 22px;
+  color: var(--muted);
+  line-height: 2;
+}
+
+@media (max-width: 500px) {
+  .tool-page {
+    padding: 25px 15px 55px;
+  }
+
+  .tool-intro h1 {
+    font-size: 29px;
+  }
+
+  .calculator-card {
+    padding: 22px 17px;
+  }
+
+  .result-box h2 {
+    font-size: 25px;
+  }
+}
+
+.form-group textarea {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 15px;
+  line-height: 1.6;
+  resize: vertical;
+  outline: none;
+}
+
+.form-group textarea:focus {
+  border-color: #6366f1;
+}
+
+
+.text-actions {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.text-actions button {
+    width: 100%;
+    margin: 0;
+}
+
+@media (max-width: 500px) {
+    .text-actions {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.form-group select {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 15px;
+    background: white;
+    color: #172033;
+    outline: none;
+}
+
+.form-group select:focus {
+    border-color: #6366f1;
+}

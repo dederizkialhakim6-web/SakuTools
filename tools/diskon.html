@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <!-- SEO DASAR -->
+    <title>Kalkulator Diskon Online Gratis - SakuTools</title>
+
+    <meta
+        name="description"
+        content="Gunakan kalkulator diskon online gratis dari SakuTools untuk menghitung potongan harga, harga akhir barang, dan persentase diskon dengan mudah dan cepat."
+    >
+
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#f5f7fb">
+
+    <!-- OPEN GRAPH -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="id_ID">
+    <meta property="og:site_name" content="SakuTools">
+
+    <meta
+        property="og:title"
+        content="Kalkulator Diskon Online Gratis - SakuTools"
+    >
+
+    <meta
+        property="og:description"
+        content="Hitung harga setelah diskon dan ketahui potongan harga barang secara praktis menggunakan kalkulator diskon gratis."
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/tool.css">
+
+    <!-- JAVASCRIPT -->
+    <script src="../assets/js/main.js" defer></script>
+    <script src="../assets/js/tools.js" defer></script>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <a href="../index.html" class="logo">
+            <span class="logo-icon">S</span>
+            SakuTools
+        </a>
+
+        <nav>
+            <a href="../index.html">Beranda</a>
+            <a href="../index.html#alat">Semua Alat</a>
+            <a href="../tentang.html">Tentang</a>
+        </nav>
+
+        <button
+            id="themeToggle"
+            class="theme-toggle"
+            aria-label="Ganti tema"
+            title="Ganti tema"
+        >
+            🌙
+        </button>
+    </header>
+
+    <main class="tool-page">
+
+        <!-- BREADCRUMB -->
+        <div class="breadcrumb">
+            <a href="../index.html">Beranda</a>
+            <span>/</span>
+            <span>Kalkulator Diskon</span>
+        </div>
+
+        <!-- INTRO -->
+        <section class="tool-intro">
+            <span class="hero-label">ALAT PERHITUNGAN</span>
+
+            <h1>Kalkulator Diskon Online</h1>
+
+            <p>
+                Hitung harga barang setelah diskon dengan mudah,
+                cepat, dan gratis.
+            </p>
+        </section>
+
+        <!-- KALKULATOR -->
+        <section class="calculator-card">
+
+            <div class="form-group">
+                <label for="harga">Harga Awal Barang (Rp)</label>
+
+                <input
+                    type="number"
+                    id="harga"
+                    placeholder="Contoh: 150000"
+                    min="0"
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="persenDiskon">Persentase Diskon (%)</label>
+
+                <input
+                    type="number"
+                    id="persenDiskon"
+                    placeholder="Contoh: 20"
+                    min="0"
+                    max="100"
+                    step="any"
+                >
+            </div>
+
+            <button class="calculate-button" id="hitungDiskon">
+                Hitung Diskon
+            </button>
+
+            <button class="reset-button" id="resetDiskon">
+                Reset
+            </button>
+
+            <p id="pesanDiskon" class="message" aria-live="polite"></p>
+
+            <div class="result-box" id="hasilDiskon" hidden>
+                <span class="result-label">Harga Setelah Diskon</span>
+
+                <h2 id="hargaAkhir">Rp0</h2>
+
+                <div class="result-detail">
+                    <span>Harga awal</span>
+                    <strong id="hargaAwalHasil">Rp0</strong>
+                </div>
+
+                <div class="result-detail">
+                    <span>Potongan harga</span>
+                    <strong id="potonganHarga">Rp0</strong>
+                </div>
+
+                <div class="result-detail">
+                    <span>Diskon</span>
+                    <strong id="diskonHasil">0%</strong>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- PETUNJUK -->
+        <section class="tool-description">
+            <h2>Bagaimana cara menggunakan?</h2>
+
+            <ol>
+                <li>Masukkan harga awal barang.</li>
+                <li>Masukkan persentase diskon.</li>
+                <li>Tekan tombol Hitung Diskon.</li>
+                <li>Lihat hasil harga setelah diskon.</li>
+            </ol>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">SakuTools</div>
+
+    <p>Semua alat digital dalam satu tempat.</p>
+
+    <p>
+        <a href="../privacy.html">Kebijakan Privasi</a>
+    </p>
+
+    <p>© 2026 SakuTools. Dibuat untuk semua orang.</p>
+</footer>
+</body>
+</html>

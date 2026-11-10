@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <!-- SEO DASAR -->
+    <title>Pengubah Teks Online Gratis - SakuTools</title>
+
+    <meta
+        name="description"
+        content="Ubah teks menjadi huruf besar, huruf kecil, kapital setiap kata, kapital awal kalimat, huruf terbalik, dan rapikan spasi secara gratis dengan Pengubah Teks SakuTools."
+    >
+
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#f5f7fb">
+
+    <!-- OPEN GRAPH -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="id_ID">
+    <meta property="og:site_name" content="SakuTools">
+    <meta
+        property="og:title"
+        content="Pengubah Teks Online Gratis - SakuTools"
+    >
+    <meta
+        property="og:description"
+        content="Ubah format tulisan dengan mudah. Tersedia fitur huruf besar, huruf kecil, kapitalisasi, huruf terbalik, dan perapian spasi."
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/tool.css">
+
+    <!-- JAVASCRIPT -->
+    <script src="../assets/js/main.js" defer></script>
+    <script src="../assets/js/tools.js" defer></script>
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="../index.html" class="logo">
+            <span class="logo-icon">S</span>
+            SakuTools
+        </a>
+
+        <nav>
+            <a href="../index.html">Beranda</a>
+            <a href="../index.html#alat">Semua Alat</a>
+            <a href="../tentang.html">Tentang</a>
+        </nav>
+
+        <button id="themeToggle" class="theme-toggle"
+            aria-label="Ganti tema">🌙</button>
+    </header>
+
+    <main class="tool-page">
+
+        <div class="breadcrumb">
+            <a href="../index.html">Beranda</a>
+            <span>/</span>
+            <span>Pengubah Teks</span>
+        </div>
+
+        <section class="tool-intro">
+            <span class="hero-label">ALAT TEKS</span>
+            <h1>Pengubah Teks Online Gratis</h1>
+            <p>
+                Ubah huruf besar, huruf kecil, dan format tulisan
+                dengan mudah dan gratis.
+            </p>
+        </section>
+
+        <section class="calculator-card">
+
+            <div class="form-group">
+                <label for="teksAsli">Masukkan Teks</label>
+                <textarea
+                    id="teksAsli"
+                    rows="6"
+                    placeholder="Ketik atau tempel teks di sini..."
+                ></textarea>
+            </div>
+
+            <h3>Pilih Format Teks</h3>
+
+            <div class="text-actions">
+                <button class="calculate-button" data-format="upper">
+                    HURUF BESAR
+                </button>
+
+                <button class="calculate-button" data-format="lower">
+                    huruf kecil
+                </button>
+
+                <button class="calculate-button" data-format="title">
+                    Kapital Setiap Kata
+                </button>
+
+                <button class="calculate-button" data-format="sentence">
+                    Kapital Awal Kalimat
+                </button>
+
+                <button class="calculate-button" data-format="reverse">
+                    hURUF dIBALIK
+                </button>
+
+                <button class="calculate-button" data-format="spaces">
+                    Rapikan Spasi
+                </button>
+            </div>
+
+            <div class="form-group">
+                <label for="hasilTeks">Hasil Teks</label>
+                <textarea
+                    id="hasilTeks"
+                    rows="6"
+                    placeholder="Hasil perubahan akan muncul di sini..."
+                    readonly
+                ></textarea>
+            </div>
+
+            <button class="calculate-button" id="salinTeks">
+                Salin Hasil
+            </button>
+
+            <button class="reset-button" id="resetPengubah">
+                Reset
+            </button>
+
+            <p id="pesanPengubah" class="message" aria-live="polite"></p>
+
+        </section>
+
+        <section class="tool-description">
+            <h2>Bagaimana cara menggunakan?</h2>
+            <ol>
+                <li>Masukkan teks yang ingin diubah.</li>
+                <li>Pilih format perubahan yang diinginkan.</li>
+                <li>Hasil perubahan akan muncul otomatis.</li>
+                <li>Tekan Salin Hasil untuk menyalin teks.</li>
+            </ol>
+        </section>
+
+    </main>
+
+   <footer>
+    <div class="footer-logo">SakuTools</div>
+
+    <p>Semua alat digital dalam satu tempat.</p>
+
+    <p>
+        <a href="../privacy.html">Kebijakan Privasi</a>
+    </p>
+
+    <p>© 2026 SakuTools. Dibuat untuk semua orang.</p>
+</footer>
+</body>
+</html>
