@@ -1,5 +1,3 @@
 
 User-agent: *
 Allow: /
-
-Sitemap: https://dederizkialhakim6-web.github.io/SakuTools/sitemap.xml
